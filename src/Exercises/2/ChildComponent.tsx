@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 const ChildComponent = ({ obj }) => {
   console.log('Rendered: ChildComponent');
   return <div>{obj.value}</div>;
 };
 
-export default ChildComponent;
+export default memo(ChildComponent);
